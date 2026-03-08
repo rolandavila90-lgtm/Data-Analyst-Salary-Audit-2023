@@ -1,0 +1,17 @@
+-- Analysis: Regional High-Value Role Audit
+-- Purpose: Identifying Data Scientist roles in California with Q4 2023 postings.
+-- Result: Ordered by highest average yearly salary.
+
+SELECT      
+       job_title_short,    
+       job_location,
+       job_posted_date,
+       salary_year_avg    
+FROM      
+        job_postings_fact        
+WHERE
+        job_title_short = 'Data Scientist'    
+ AND    job_location = 'California'
+ AND    job_posted_date BETWEEN '2023-09-01' AND '2023-12-31'    
+ ORDER BY      
+        salary_year_avg DESC;
