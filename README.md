@@ -1,15 +1,18 @@
-# Data Analyst Salary Audit (2023)
+# 📊 Data Analyst Salary Audit (2023)
+> A SQL-based audit of Data Analyst salary trends across 
+> major US hiring hubs using real job postings data.
 
-"Applying **BSOA principles** of data integrity and internal controls to audit average salary trends. Using SQL to verify high-value roles across specific financial hubs and remote 'Anywhere' markets."  
+**Goal:** Identify which locations offer the highest 
+salaries for Data Analyst roles within a specific range.
 
-### 🚀 Latest Achievement: Nested Logic & Regional Filtering
-I implemented a complex `WHERE` clause to isolate salary requirements for specific cities, ensuring strict internal controls over data output.
+**Dataset:** Luke Barousse's Job Postings Dataset     
 
-#### **The Logic**
-I used **nested parentheses** to ensure that:
-* **San Francisco** roles are only shown if the salary is above **$140k**.
-* **Austin** roles are only shown if the salary is between **$80k - $110k**.
-* The job title remains strictly **'Data Analyst'**.
+## 🧠 SQL Concepts Applied
+- WHERE with AND / OR logic
+- Nested parentheses for complex filtering
+- BETWEEN for salary range filtering
+- IN for multiple location filtering
+- ORDER BY DESC for salary ranking
 
 **Proof of Regional Audit (Lab Environment View):**
 ![Regional Budget Results](./regional_budget_audit.sql_result.png)
@@ -33,3 +36,5 @@ While running this audit, I noticed that the top-paying roles in this bracket we
 * **Operating System:** Fedora KDE Plasma Desktop 43 (Linux)
 * **Database Lab:** sqliteviz
 * **Version Control:** GitHub
+---
+*Part of my [Data-Analyst-Learning-Journey](https://github.com/rolandavila90-lgtm/Data-Analyst-Learning-Journey) repository.*
